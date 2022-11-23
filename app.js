@@ -84,8 +84,8 @@ function checkIfCardsMatch(firstCard, secondCard) {
         firstCard.classList.add("correct");
         secondCard.classList.add("correct");
         setTimeout(() => {
-            firstCard.remove();
-            secondCard.remove();
+            firstCard.classList.add("hide");
+        secondCard.classList.add("hide");
         }, 1000);
         
     } else {
@@ -108,7 +108,7 @@ function flipCard(card, symbol){
 
     
     //If-sats som förhindrar spelaren att öppna fler än 2 kort samtidigt
-    if (!gameState.currentlyFlipped){
+    if (!gameState.currentlyFlipped && !card.currentTarget.classList.contains("hide")){
         card = card.currentTarget;
         card.classList.toggle('flip');
         
