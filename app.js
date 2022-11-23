@@ -116,7 +116,7 @@ function flipCard(card, symbol){
         checkIfCardsMatch(firstCard, secondCard)
         
         //Flippa tillbaka alla kort 
-        setTimeout(flipBackCards, 2000);
+        setTimeout(flipBackCards, 500);
     }
 }
 
