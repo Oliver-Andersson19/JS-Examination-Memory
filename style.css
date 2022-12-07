@@ -1,0 +1,305 @@
+body {
+    height: 100vh;
+
+    color: white;
+    background-color: #252525;
+}
+
+.game-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    height: 100vh;
+    width: 70vw;
+
+    margin: 0 auto;
+
+    perspective: 1000px;
+
+    display: none;
+}
+
+.start-menu, .player-menu {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    width: 50vw;
+    height: 100vh;
+
+    margin: 0 auto;
+
+    z-index: 0;
+}
+
+.start-menu {
+
+}
+
+.start-menu button {
+    position: fixed;
+
+    height: 2.5em;
+    width: 20%;
+
+    border: none;
+
+    
+    color: white;
+    background-color: #9c6600;
+
+    font-size: 2rem;
+
+    z-index: 1;
+}
+
+.start-menu button::after {
+    content: 'START';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    top: -15px;
+    left: -15px;
+
+    background-color: orange;
+
+    z-index: 0;
+}
+
+
+
+.player-menu {
+    display: none;
+    flex-direction: column;
+    gap: 2em;
+
+    
+}
+
+.player-menu input {
+    height: 3.5em;
+    width: 20%;
+
+    margin-right: 15px;
+}
+
+.player-menu button {
+    position: relative;
+    height: 3.5em;
+    width: 25%;
+
+    color: white;
+    background-color: #9c6600;
+    border: none;
+
+    z-index: 1;
+}
+
+.start-game-btn::after {
+    content: 'START';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    top: -15px;
+    left: -15px;
+
+    background-color: orange;
+
+    z-index: 0;
+} 
+
+.back-btn::after {
+    content: 'BACK';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    top: -15px;
+    left: -15px;
+
+    background-color: orange;
+
+    z-index: 0;
+}
+
+
+
+.top-side {
+    height: 70vh;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    line-height: 5vh;
+    height: 5vh;
+
+    font-size: 3rem;
+
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vh;
+    justify-content: center;
+    align-items: center;
+
+    height: 40vh;
+    width: 50%;
+    margin: 10em auto 0 auto;
+
+}
+
+.winner-text {
+    font-size: 6rem;
+    display: none;
+}
+
+.points-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 30vh;
+    width: 30%;
+
+    margin: 0 auto 2em auto;
+
+    
+}
+
+.reset-btn, .exit-btn {
+    position: relative;
+    padding: 2em;
+
+    margin-top: 3em;
+
+    border: none;
+
+    color: white;
+    background-color: #9c6600;
+}
+
+.reset-btn::after {
+    content: 'Återställ poängen';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    top: -15px;
+    left: -15px;
+
+    background-color: orange;
+
+    z-index: 0;
+}
+
+.exit-btn::after {
+    content: 'Avsluta matchen';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    top: -15px;
+    left: -15px;
+
+    background-color: orange;
+
+    z-index: 0;
+}
+
+.points-container h1 {
+    margin: 1rem 0 0 2rem;
+
+    font-size: 1.5rem;
+}
+
+.points-container h3 {
+    margin: 1rem 0 0 3rem;
+    font-size: 1.5rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 12vh;
+    width: 12vh;
+
+    color: white;
+    background-color: orange;
+
+    font-size: 5em;
+
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.correct {
+    color: white;
+    background-color: green;
+}
+
+.hide {
+    visibility: hidden;
+    cursor: default;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 1408px) {
+    header {
+        font-size: 2rem;
+    }
+    .card-container {
+        margin-top: 2em;
+        font-size: 0.5em;
+
+        width: 40%;
+    }
+    .points-container {
+        height: 50vh;
+    }
+    .points-container h1, .points-container h3 {
+        font-size: 1rem;
+    }
+  }
