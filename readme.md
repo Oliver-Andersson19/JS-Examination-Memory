@@ -1,3 +1,5 @@
+Min Javascript 1 examinations uppgift med annan styling.
+
 **Se hemsidan här:** https://oliver-andersson19.github.io/JS-Examination-Memory/
 
 # Memory game
