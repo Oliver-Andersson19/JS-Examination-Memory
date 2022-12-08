@@ -7,7 +7,7 @@ body {
 
 .game-wrapper {
     display: flex;
-    justify-content: space-between;
+    
     flex-direction: column;
 
     height: 100vh;
@@ -303,3 +303,37 @@ header {
         font-size: 1rem;
     }
   }
+
+@media only screen and (max-width: 768px) {
+    body {
+        
+    }
+    .start-menu {
+        width: 100vw;;
+    }
+    .start-menu .start-btn {
+        width: 80%;
+    }
+    .player-menu {
+        width: 100vw;;
+    }
+    .player-menu button {
+        width: 80%;
+    }
+    .player-menu input {
+        width: 80%;
+    }
+    .game-wrapper {
+        width: 100vw;
+    }
+    .card-container {
+        width: 100%;
+    }
+    .points-container {
+        width: 70%;
+        height: 30vh;
+    }
+    .reset-btn, .exit-btn {
+        padding: 1.5em;
+    }
+} 
