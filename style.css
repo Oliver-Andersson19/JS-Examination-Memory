@@ -306,7 +306,7 @@ header {
 
 @media only screen and (max-width: 768px) {
     body {
-        
+        height: 90vh;
     }
     .start-menu {
         width: 100vw;;
@@ -324,14 +324,31 @@ header {
         width: 80%;
     }
     .game-wrapper {
+        height: 100%;
         width: 100vw;
     }
     .card-container {
         width: 100%;
     }
+    .card {
+        height: 11vh;
+        width: 11vh;
+    }
+    .top-side {
+        height: 65%;
+    }
     .points-container {
         width: 70%;
-        height: 30vh;
+        height: 20%;
+    }
+    .points-container h1 {
+        margin: 1rem 0 0 2rem;
+        font-size: 1rem;
+    }
+    
+    .points-container h3 {
+        margin: .5rem 0 0 3rem;
+        font-size: 1rem;
     }
     .reset-btn, .exit-btn {
         padding: 1.5em;
