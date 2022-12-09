@@ -164,7 +164,7 @@ header {
 
     height: 40vh;
     width: 50%;
-    margin: 10em auto 0 auto;
+    margin: 5em auto 0 auto;
 
 }
 
@@ -250,8 +250,8 @@ header {
     align-items: center;
     justify-content: center;
 
-    height: 12vh;
-    width: 12vh;
+    aspect-ratio: 1 / 1;
+    flex: 0 0 20%;
 
     color: white;
     background-color: orange;
@@ -328,11 +328,11 @@ header {
         width: 100vw;
     }
     .card-container {
-        width: 100%;
+        width: 90%;
     }
     .card {
-        height: 11vh;
-        width: 11vh;
+        aspect-ratio: 1 / 1;
+        flex: 0 0 20%;
     }
     .top-side {
         height: 65%;
